@@ -1,5 +1,4 @@
 --[[ Credits
-f
     Matas#3535 @matas - Created UI
     bored#9316 @wally hub user - Helped make library
 ]] -- // Variables
@@ -413,18 +412,18 @@ do
             Color = theme.light_contrast
         })
         --
-        local logo = utility:Create("Image", {Vector2.new(4, 2), inner_frame}, {
-            Size = 5,
+        local logo = utility:Create("Image", {Vector2.new(4, 0), inner_frame}, {
+            Size = Vector2.new(20,20),
             Data = game:HttpGet("https://i.ibb.co/dcFvJVx/Vision-2-PFP-2-copie.png"),
-            Position = utility:Position(0, 5, 0, 2, inner_frame)
+            Position = utility:Position(0, 0, 0, 0, inner_frame)
         })
-        local title = utility:Create("TextLabel", {Vector2.new(5, 2), inner_frame}, {
+        local title = utility:Create("TextLabel", {Vector2.new(155, 4), inner_frame}, {
             Text = name,
             Size = theme.textsize,
             Font = theme.font,
             Color = theme.textcolor,
             OutlineColor = theme.textborder,
-            Position = utility:Position(0, 5, 0, 2, inner_frame)
+            Position = utility:Position(0, 155, 0, 4, inner_frame)
         })
         --
         local inner_frame_inline = utility:Create("Frame", {Vector2.new(4, 18), inner_frame}, {
