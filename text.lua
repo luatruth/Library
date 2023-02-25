@@ -13,9 +13,9 @@ local g = {
     ended = {},
     changed = {},
     folders = {
-        main = "splix",
-        assets = "splix/assets",
-        configs = "splix/configs"
+        main = "vision",
+        assets = "vision/assets",
+        configs = "vision/configs"
     },
     shared = {
         initialized = false,
@@ -25,6 +25,9 @@ local g = {
 }
 if not isfolder(g.folders.main) then
     makefolder(g.folders.main)
+end
+if not isfolder(g.folders.assets) then
+    makefolder(g.folders.assets)
 end
 if not isfolder(g.folders.configs) then
     makefolder(g.folders.configs)
